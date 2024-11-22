@@ -1,0 +1,186 @@
+body {
+    font-family: 'Georgia';
+    text-align: center;
+    background-color: #d9fffe;
+    background-image: linear-gradient(0.525turn, #d9fffe, #25909a, #007c78);
+    font-size: 16pt;
+    margin: 0;
+}
+h1 {
+    text-shadow: 10px 8px 5px darkgray;
+}
+.sources{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sources p {
+    font-size: 12pt;
+    color: white;
+    height: 150px;
+    margin: auto;
+}
+.sources ul {
+    list-style-type: none;
+}
+.topics {
+    width: 50%;
+}
+.topics li {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: Gagalin;
+}
+.topics li::after {
+    content: ":";
+}
+.topics p {
+    text-indent: 1cm;
+    column-count: 2;
+}
+.topics p::first-letter{
+    font-size: 24px;
+}
+video {
+    margin: 0px;
+}
+#header-list {
+    font-weight: bolder;
+    font-size: 24pt;
+    text-align: justify;
+}
+footer {
+    font-size: 12pt;
+    text-align: center;
+    color: white;
+}
+footer p {
+    margin: 0px;
+}
+.footer-small-describe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-small-describe p {
+    font-size: 10pt; 
+    color: lightgray; 
+    width: 500px;
+    margin: auto 5px;
+}
+.footer-small-describe p:nth-child(2) {
+    column-count: 2;
+}
+.table-pricelist, .gallery {
+    box-shadow: 0 0 10px 5px white;
+}
+thead th {
+    background-color: #7c0004;
+}
+tbody td {
+    background-color: #950005;
+}
+#table-header {
+    color: #7c0004;
+    font-weight: bold;
+    font-size: 18pt;
+}
+table {
+    border: white solid;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+th, td {
+    border: #7c0004 dashed;
+    padding: 4px;
+    border-radius: 10px;
+    color: white;
+}
+.table-pricelist tbody td:hover {
+    background-color: #991d21;
+    border: white solid;
+}
+form {
+    text-align: left;
+    border: #E1B075 dotted;
+    border-width: thick;
+    margin: 30px 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+form label, form p {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    align-content: center;
+    justify-content: left;
+}
+form input, form textarea {
+    background-color: #E1B075;
+    border-radius: 10px;
+    border: white solid;
+    padding: 5px;
+}
+form input:focus, form textarea:focus {
+    background-color: #e1b07590;
+    color: white;
+}
+
+form :nth-last-child(1) {
+    cursor: pointer;
+}
+
+form input:valid, form textarea:valid {
+    border: lightgreen solid;
+}
+
+a {
+    color: white;
+}
+
+@media screen and (width <= 728px) {
+    #header-list {
+        font-size: 20pt;
+        text-align: center;
+    }
+
+    .table-pricelist {
+        font-size: 14px;
+    }
+
+    .gallery {
+        font-size: 14px;
+    }
+
+    .gallery iframe {
+        width: 200px;
+        height: 200px;
+    }
+
+    .topics div {
+        height: 350px;
+    }
+
+    .topics li {
+        font-size: 16px;
+    }
+
+    .topics li::after {
+        content: none;
+    }
+
+    .topics p {
+        font-size: 14px;
+        column-count: auto;
+        height: auto;
+    }
+}
+
+@font-face {
+    font-family: Gagalin;
+    src: url("../fonts/ofont.ru_Gagalin.ttf");
+}

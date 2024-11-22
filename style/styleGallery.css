@@ -1,0 +1,3 @@
+body {margin: 0;}
+.gallery-item {display: flex; justify-content: center; align-items: center;}
+.gallery-item img {width: 80%; height: 80%;}
