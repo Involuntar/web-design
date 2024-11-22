@@ -35,7 +35,7 @@ h1 {
     margin: auto;
     font-family: Gagalin;
 }
-.topics li::after {
+.topics u::after {
     content: ":";
 }
 .topics p {
