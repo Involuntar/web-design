@@ -227,6 +227,22 @@ div.hamburger > input:checked ~ nav {
     display: inline-block;
 }
 
+.accordion > input {
+    display: none;
+}
+
+.accordion > label {
+    cursor: pointer;
+}
+
+.accordion > nav {
+    display: none;
+}
+
+.accordion > input:checked ~ nav {
+    display: block;
+}
+
 @media screen and (width <= 728px) {
     #header-list {
         font-size: 20pt;
