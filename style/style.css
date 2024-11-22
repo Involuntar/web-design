@@ -142,6 +142,45 @@ a {
     color: white;
 }
 
+.spoiler {
+    border: 1px solid #7c0004;
+    text-align: left;
+    width: 50vw;
+    margin: 50px auto;
+}
+
+.spoiler > input {
+    display: none;
+}
+
+.spoiler > label {
+    display: block;
+    color: white;
+    background-color: #7c0004;
+    margin: 1px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.spoiler > div {
+    display: none;
+    padding: 3px;
+    background-color: #991d21;
+    color: #FFF;
+}
+
+.spoiler > label > span::before {
+    content: "[+]";
+}
+
+.spoiler > input:checked ~ div {
+    display: block;
+}
+
+.spoiler > input:checked ~ label > span::before {
+    content: "[-]";
+}
+
 @media screen and (width <= 728px) {
     #header-list {
         font-size: 20pt;
